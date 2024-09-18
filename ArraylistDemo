@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.util.ArrayList;
+class ArrayListDemo
+{
+    public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    ArrayList<Integer>al=new ArrayList<Integer>();
+    int Sum=0;
+    float Avg=0;
+    System.out.println("Enter elements into Array list");
+    while(sc.hasNextInt())
+    {
+        al.add(sc.nextInt());
+    }
+    for(int i=0;i<al.size();i++)
+    {
+        Sum=Sum+al.get(i);
+    }
+    Avg=(float)Sum/al.size();
+    System.out.println("sum of elements is:"+Sum);
+    System.out.println("Avg of elements is: "+Avg);
+}
+}
+    
