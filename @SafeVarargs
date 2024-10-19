@@ -1,0 +1,11 @@
+import java.util.Arrays;  
+public class Calculator {  
+    @SafeVarargs  
+    public static <T> T sum(T... values) {  
+        return Arrays.stream(values)  
+                     .reduce(null, (a, b) -> (a == null) ? b : a);  
+    }  
+    public static void main(String[] args) {  
+        System.out.println(sum(1, 2, 3));  
+    }  
+}  
