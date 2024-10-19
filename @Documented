@@ -1,0 +1,17 @@
+// Java Program to Illustrate Documented Annotations
+// With using @Documented annotation
+import java.lang.annotation.Documented;
+
+// Creating a single value custom annotation
+@Documented @interface CustomAnnotation { String value(); }
+// This annotation will be documented
+@CustomAnnotation("GFG")
+// Main class
+public class GFG {
+	// Main driver method
+	public static void main(String[] args)
+	{
+		// Print and display statement on the console
+		System.out.println("This is the main function");
+	}
+}
